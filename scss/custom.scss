@@ -1,0 +1,167 @@
+$primary: #f2f2f2;
+$secondary: #8c8c8c;
+$success: #404040;
+$info: #0d0d0d;
+$font-size-base: 1rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans&family=Martian+Mono:wght@800&family=Montserrat:wght@500&display=swap");
+
+@include media-breakpoint-down(sm) {
+  * {
+    font-size: 0.9rem;
+  }
+}
+* {
+  color: $primary;
+  font-family: "Josefin Sans", sans-serif, monospace;
+}
+
+body {
+  background-color: $secondary;
+}
+#skills,
+#about,
+#projects,
+#hobbies {
+  padding-top: 92px;
+  min-height: 100dvh;
+}
+#about p {
+  max-width: 400px;
+  padding: 30px;
+}
+.cv-button,
+.form-button {
+  background-color: $info;
+  color: $primary;
+  box-shadow: 0 0 20px $primary;
+  &:hover {
+    transform: scale(0.95);
+    transition: all 0.3s linear;
+    background-color: $primary;
+    box-shadow: 0 0 30px $info;
+    color: $info;
+  }
+}
+#about img {
+  margin: 30px;
+  box-shadow: 0 0 50px $primary;
+}
+.show-border {
+  border-top: 2px solid $info;
+  border-bottom: 2px solid $info;
+  border-radius: 55px;
+  margin: 15px 0;
+}
+
+h1 {
+  color: $info;
+  font-weight: bolder;
+}
+#skills h1,
+#projects h1,
+#contact h1,
+#hobbies h1 {
+  margin-bottom: 40px;
+}
+#skills h4 {
+  margin: 20px 0;
+}
+.icon img {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  margin: 5px;
+}
+#skills img.re-icon {
+  width: 65px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  margin: 20px;
+  height: 20px;
+  box-shadow: 0 0 20px $primary;
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.5s linear;
+    box-shadow: 0 0 20px $info;
+  }
+}
+.card {
+  background-color: $primary;
+  box-shadow: 0 0 30px $info;
+  .card-button {
+    background-color: $info;
+    color: $primary;
+    height: 40px;
+    box-shadow: 0 0 20px $info;
+    &:hover {
+      transform: scale(0.95);
+      transition: all 0.3s linear;
+      background-color: $primary;
+      box-shadow: 0 0 30px $primary;
+      color: $info;
+    }
+  }
+  p {
+    color: $info;
+  }
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+    background-color: $info;
+    box-shadow: 0 0 50px $primary;
+    p,
+    h5 {
+      color: $primary;
+    }
+    .card-button {
+      box-shadow: 0 0 30px $primary;
+    }
+  }
+}
+.carousel {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+.carousel-inner,
+.carousel-item,
+.carousel-item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item > img {
+  object-fit: cover;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.form-control {
+  background-color: $primary;
+  color: $info;
+  box-shadow: 0 0 30px $info;
+  &:focus {
+    border: none;
+    transform: scale(1.025);
+    transition: all 0.3s linear;
+    background-color: $info;
+    color: $primary;
+    box-shadow: 0 0 50px $primary;
+    &::placeholder {
+      color: $primary;
+    }
+  }
+}
