@@ -11859,11 +11859,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (max-width: 575.98px) {
-  * {
-    font-size: 0.9rem;
-  }
-}
 * {
   color: #f2f2f2;
   font-family: "Josefin Sans", sans-serif, monospace;
@@ -11879,6 +11874,10 @@ body {
 #hobbies {
   padding-top: 92px;
   min-height: 100dvh;
+}
+
+#contact {
+  padding-top: 92px;
 }
 
 #about p {
@@ -11910,9 +11909,15 @@ body {
   border-top: 2px solid #0d0d0d;
   border-bottom: 2px solid #0d0d0d;
   border-radius: 55px;
-  margin: 15px 0;
+  margin: 13px 0;
 }
 
+@media (min-width: 576px) {
+  .show-border {
+    border-top: none;
+    border-bottom: none;
+  }
+}
 h1, .h1 {
   color: #0d0d0d;
   font-weight: bolder;
@@ -11953,13 +11958,7 @@ h1, .h1 {
 
 .progress {
   margin: 20px;
-  height: 20px;
   box-shadow: 0 0 20px #f2f2f2;
-}
-.progress:hover {
-  transform: scale(1.02);
-  transition: all 0.5s linear;
-  box-shadow: 0 0 20px #0d0d0d;
 }
 
 .card {
@@ -12036,6 +12035,38 @@ h1, .h1 {
 }
 .form-control:focus::placeholder {
   color: #f2f2f2;
+}
+
+#social-media img {
+  cursor: pointer;
+}
+
+.d-always {
+  display: block !important;
+}
+
+.mark-up-progress {
+  transform: scale(1.08) translateY(-10%);
+  transition: all 0.5s linear;
+}
+
+@media (max-width: 575.98px) {
+  * {
+    font-size: 0.9rem;
+  }
+  .icon img {
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    margin: 3px;
+  }
+  #skills h4, #skills .h4 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  .mark-up-progress {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

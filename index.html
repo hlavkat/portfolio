@@ -17,6 +17,9 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      alert("!!! Kontaktní formulář zatím nefunguje !!!");
+    </script>
   </head>
   <body>
     <!-- header -->
@@ -37,8 +40,11 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav me-1">
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#about">
                   O mně
                 </a>
@@ -67,14 +73,20 @@
               class="col-md-6 d-flex flex-column justify-content-center align-content-center flex-wrap"
             >
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
-                hic perferendis culpa dicta nam molestiae minima consequatur
-                soluta nemo saepe. Sunt, esse magni ullam consequatur qui
-                tempora sequi rerum dicta. Iusto possimus asperiores quo illo
-                enim numquam, aliquid cum accusantium? Deserunt perspiciatis
-                excepturi vitae possimus. Unde id quisquam ipsam molestiae!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias sed ad tenetur soluta facere, atque deleniti
+                Vítám vás na svém porfoliu. Aktuálně absolvuji na Vysoké škole
+                báňské - Technická univerzita Ostrava rekvalifikační kurz
+                zaměřený na objektově orientované programování a programování
+                webových aplikací. K programování jsem se dostal úplnou náhodou
+                a hned mě nadchla ta volnost a kerativita. Po kurzu bych se
+                rád vzdělával dál pod vedením zkušených programátorů a zároveň
+                posouval své zkušenosti a znalosti.
+              </p>
+              <p>
+                <cite>
+                  "Jediný způsob, jak dělat skvělou práci, je milovat to, co
+                  děláte."
+                </cite>
+                - Steve Jobs
               </p>
               <a
                 class="cv-button btn"
@@ -112,130 +124,177 @@
                     alt="html5"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="html5"
                     title="HTML5"
-                    onclick="showProgressHtml()"
+                    onclick="showProgressHtml('#html5')"
+                    onmouseenter="markUpProgress('html5')"
+                    onmouseleave="removeMarkUpProgress('html5')"
                   />
                   <img
                     src="image/icons/css3.svg"
                     alt="css3"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="css3"
                     title="CSS3"
+                    onclick="showProgressHtml('#css3')"
+                    onmouseenter="markUpProgress('css3')"
+                    onmouseleave="removeMarkUpProgress('css3')"
                   />
                   <img
                     src="image/icons/js.svg"
                     alt="js"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="js"
                     title="JavaScript"
+                    onclick="showProgressHtml('#js')"
+                    onmouseenter="markUpProgress('js')"
+                    onmouseleave="removeMarkUpProgress('js')"
                   />
                   <img
                     src="image/icons/react.svg"
                     alt="react"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="react"
                     title="React"
+                    onclick="showProgressHtml('#react')"
+                    onmouseenter="markUpProgress('react')"
+                    onmouseleave="removeMarkUpProgress('react')"
                   />
                   <img
                     src="image/icons/bootstrap.svg"
                     alt="bootstrap"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="bootstrap"
                     title="Bootstrap"
+                    onclick="showProgressHtml('#bootstrap')"
+                    onmouseenter="markUpProgress('bootstrap')"
+                    onmouseleave="removeMarkUpProgress('bootstrap')"
                   />
                   <img
                     src="image/icons/php.svg"
                     alt="php"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="php"
                     title="PHP"
+                    onclick="showProgressHtml('#php')"
+                    onmouseenter="markUpProgress('php')"
+                    onmouseleave="removeMarkUpProgress('php')"
                   />
                 </div>
                 <!-- / icons -->
                 <!-- progressBar www -->
-                <div class="html-progress d-none d-sm-block">
+                <div class="www-progress">
                   <div
-                    class="progress html5"
+                    class="progress d-none d-sm-block"
+                    id="html5"
                     role="progressbar"
                     aria-valuenow="0"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="html5"
+                    onmouseenter="markUpProgress('html5')"
+                    onmouseleave="removeMarkUpProgress('html5')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">HTML5</span>
+                      <span>HTML5</span>
                     </div>
                   </div>
                   <div
-                    class="progress css3"
+                    class="progress d-none d-sm-block"
+                    id="css3"
                     role="progressbar"
                     aria-valuenow="25"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="css3"
+                    onmouseenter="markUpProgress('css3')"
+                    onmouseleave="removeMarkUpProgress('css3')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">CSS3</span>
+                      <span>CSS3</span>
                     </div>
                   </div>
                   <div
-                    class="progress js"
+                    class="progress d-none d-sm-block"
+                    id="js"
                     role="progressbar"
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="js"
+                    onmouseenter="markUpProgress('js')"
+                    onmouseleave="removeMarkUpProgress('js')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">JavaScript</span>
+                      <span>JavaScript</span>
                     </div>
                   </div>
                   <div
-                    class="progress react"
+                    class="progress d-none d-sm-block"
+                    id="react"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="react"
+                    onmouseenter="markUpProgress('react')"
+                    onmouseleave="removeMarkUpProgress('react')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">REACT</span>
+                      <span>REACT</span>
                     </div>
                   </div>
                   <div
-                    class="progress bootstrap"
+                    class="progress d-none d-sm-block"
+                    id="bootstrap"
                     role="progressbar"
                     aria-valuenow="100"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="bootstrap"
+                    onmouseenter="markUpProgress('bootstrap')"
+                    onmouseleave="removeMarkUpProgress('bootstrap')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">BOOTSTRAP</span>
+                      <span>BOOTSTRAP</span>
                     </div>
                   </div>
                   <div
-                    class="progress php"
+                    class="progress d-none d-sm-block"
+                    id="php"
                     role="progressbar"
                     aria-valuenow="100"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="php"
+                    onmouseenter="markUpProgress('php')"
+                    onmouseleave="removeMarkUpProgress('php')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">PHP</span>
+                      <span>PHP</span>
                     </div>
                   </div>
                 </div>
@@ -258,66 +317,90 @@
                     alt="c#"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="csharp"
                     title="C#"
+                    onclick="showProgressHtml('#csharp')"
+                    onmouseenter="markUpProgress('csharp')"
+                    onmouseleave="removeMarkUpProgress('csharp')"
                   />
                   <img
                     src="image/icons/java.svg"
                     alt="java"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="java"
                     title="Java"
+                    onclick="showProgressHtml('#java')"
+                    onmouseenter="markUpProgress('java')"
+                    onmouseleave="removeMarkUpProgress('java')"
                   />
                   <img
                     src="image/icons/python.svg"
                     alt="phyton"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="python"
                     title="Phyton"
+                    onclick="showProgressHtml('#phyton')"
+                    onmouseenter="markUpProgress('python')"
+                    onmouseleave="removeMarkUpProgress('python')"
                   />
                 </div>
                 <!-- / icon -->
                 <!-- progressBar programing languages -->
-                <div class="programing-progress d-none d-sm-block">
+                <div class="programing-progress">
                   <div
-                    class="progress c-sharp"
+                    class="progress d-none d-sm-block"
+                    id="csharp"
                     role="progressbar"
                     aria-valuenow="0"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="csharp"
+                    onmouseenter="markUpProgress('csharp')"
+                    onmouseleave="removeMarkUpProgress('csharp')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">C#</span>
+                      <span>C#</span>
                     </div>
                   </div>
                   <div
-                    class="progress java"
+                    class="progress d-none d-sm-block"
+                    id="java"
                     role="progressbar"
                     aria-valuenow="25"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="java"
+                    onmouseenter="markUpProgress('java')"
+                    onmouseleave="removeMarkUpProgress('java')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">JAVA</span>
+                      <span>JAVA</span>
                     </div>
                   </div>
                   <div
-                    class="progress python"
+                    class="progress d-none d-sm-block"
+                    id="phyton"
                     role="progressbar"
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="python"
+                    onmouseenter="markUpProgress('python')"
+                    onmouseleave="removeMarkUpProgress('python')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">PYTHON</span>
+                      <span>PYTHON</span>
                     </div>
                   </div>
                 </div>
@@ -336,44 +419,60 @@
                     alt="xamarin"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="xamarin"
                     title="Xamarin"
+                    onclick="showProgressHtml('#xamarin')"
+                    onmouseenter="markUpProgress('xamarin')"
+                    onmouseleave="removeMarkUpProgress('xamarin')"
                   />
                   <img
                     src="image/icons/android.svg"
                     alt="xamarin"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="android"
                     title="Android"
+                    onclick="showProgressHtml('#android')"
+                    onmouseenter="markUpProgress('android')"
+                    onmouseleave="removeMarkUpProgress('android')"
                   />
                 </div>
                 <!-- progressBar mobile -->
-                <div class="mobile-progress d-none d-sm-block">
+                <div class="mobile-progress">
                   <div
-                    class="progress xamarin"
+                    class="progress d-none d-sm-block"
+                    id="xamarin"
                     role="progressbar"
                     aria-valuenow="0"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="xamarin"
+                    onmouseenter="markUpProgress('xamarin')"
+                    onmouseleave="removeMarkUpProgress('xamarin')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">XAMARIN</span>
+                      <span>XAMARIN</span>
                     </div>
                   </div>
                   <div
-                    class="progress android-studio"
+                    class="progress d-none d-sm-block"
+                    id="android"
                     role="progressbar"
                     aria-valuenow="25"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="android"
+                    onmouseenter="markUpProgress('android')"
+                    onmouseleave="removeMarkUpProgress('android')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">ANDROID STUDIO</span>
+                      <span>ANDROID STUDIO</span>
                     </div>
                   </div>
                 </div>
@@ -395,42 +494,58 @@
                     src="image/icons/winSrv.svg"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="win-ser"
                     title="WinSer"
+                    onclick="showProgressHtml('#win-ser')"
+                    onmouseenter="markUpProgress('win-ser')"
+                    onmouseleave="removeMarkUpProgress('win-ser')"
                   />
                   <img
                     src="image/icons/linux.svg"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="linux"
                     title="Linux"
+                    onclick="showProgressHtml('#linux')"
+                    onmouseenter="markUpProgress('linux')"
+                    onmouseleave="removeMarkUpProgress('linux')"
                   />
                 </div>
                 <!-- / icon -->
                 <!-- progressBar os -->
-                <div class="os-progress d-none d-sm-block">
+                <div class="os-progress">
                   <div
-                    class="progress widows-server"
+                    class="progress d-none d-sm-block"
+                    id="win-ser"
                     role="progressbar"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="win-ser"
+                    onmouseenter="markUpProgress('win-ser')"
+                    onmouseleave="removeMarkUpProgress('win-ser')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">WINDOWS SERVER</span>
+                      <span>WINDOWS SERVER</span>
                     </div>
                   </div>
                   <div
-                    class="progress linux"
+                    class="progress d-none d-sm-block"
+                    id="linux"
                     role="progressbar"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="linux"
+                    onmouseenter="markUpProgress('linux')"
+                    onmouseleave="removeMarkUpProgress('linux')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">LINUX</span>
+                      <span>LINUX</span>
                     </div>
                   </div>
                 </div>
@@ -449,7 +564,11 @@
                     alt="access"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="access"
                     title="Access"
+                    onclick="showProgressHtml('#access')"
+                    onmouseenter="markUpProgress('access')"
+                    onmouseleave="removeMarkUpProgress('access')"
                   />
                   <img
                     src="image/icons/oracle.svg"
@@ -457,80 +576,108 @@
                     alt="oracle"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="oracle"
                     title="Oracle"
+                    onclick="showProgressHtml('#oracle')"
+                    onmouseenter="markUpProgress('oracle')"
+                    onmouseleave="removeMarkUpProgress('oracle')"
                   />
                   <img
                     src="image/icons/sqlSer.svg"
                     alt="sql-server"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="ms-sql"
                     title="windows SQL"
+                    onclick="showProgressHtml('#ms-sql')"
+                    onmouseenter="markUpProgress('ms-sql')"
+                    onmouseleave="removeMarkUpProgress('ms-sql')"
                   />
                   <img
                     src="image/icons/plSql.svg"
                     alt="pl/sql"
                     data-toggle="tooltip"
                     data-bs-placement="top"
+                    data-type="pl-sql"
                     title="Pl/SQL"
+                    onclick="showProgressHtml('#pl-sql')"
+                    onmouseenter="markUpProgress('pl-sql')"
+                    onmouseleave="removeMarkUpProgress('pl-sql')"
                   />
                 </div>
                 <!-- / icon -->
                 <!-- progressBar databases -->
-                <div class="databases-progress d-none d-sm-block">
+                <div class="databases-progress">
                   <div
-                    class="progress access"
+                    class="progress d-none d-sm-block"
+                    id="access"
                     role="progressbar"
                     aria-valuenow="0"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="access"
+                    onmouseenter="markUpProgress('access')"
+                    onmouseleave="removeMarkUpProgress('access')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">ACCESS</span>
+                      <span>ACCESS</span>
                     </div>
                   </div>
                   <div
-                    class="progress oracle"
+                    class="progress d-none d-sm-block"
+                    id="oracle"
                     role="progressbar"
                     aria-valuenow="25"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="oracle"
+                    onmouseenter="markUpProgress('oracle')"
+                    onmouseleave="removeMarkUpProgress('oracle')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">ORACLE DATABASE</span>
+                      <span>ORACLE DATABASE</span>
                     </div>
                   </div>
                   <div
-                    class="progress sql-server"
+                    class="progress d-none d-sm-block"
+                    id="ms-sql"
                     role="progressbar"
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="ms-sql"
+                    onmouseenter="markUpProgress('ms-sql')"
+                    onmouseleave="removeMarkUpProgress('ms-sql')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">MS SQL SERVER</span>
+                      <span>MS SQL SERVER</span>
                     </div>
                   </div>
                   <div
-                    class="progress pl-sql"
+                    class="progress d-none d-sm-block"
+                    id="pl-sql"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    data-type="pl-sql"
+                    onmouseenter="markUpProgress('pl-sql')"
+                    onmouseleave="removeMarkUpProgress('pl-sql')"
                   >
                     <div
                       class="progress-bar progress-bar-striped bg-info text-dark progress-bar-animated"
                       style="width: 50%"
                     >
-                      <span style="font-weight: bold">PL/SQL</span>
+                      <span>PL/SQL</span>
                     </div>
                   </div>
                 </div>
@@ -844,7 +991,11 @@
               <div
                 class="d-flex flex-column flex-sm-row justify-content-between align-items-center"
               >
-                <button type="submit" class="form-button btn m-3 px-5 py-2">
+                <button
+                  type="submit"
+                  class="form-button btn m-3 px-5 py-2"
+                  disabled
+                >
                   Odeslat
                 </button>
                 <button type="reset" class="form-button btn m-3 px-5">
@@ -959,6 +1110,6 @@
     </script>
     <!-- / markUp nav-section -->
     <!-- Show-progress-sm -->
-    <script src="show-progress.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
