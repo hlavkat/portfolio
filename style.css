@@ -11905,19 +11905,6 @@ body {
   box-shadow: 0 0 50px #f2f2f2;
 }
 
-.show-border {
-  border-top: 2px solid #0d0d0d;
-  border-bottom: 2px solid #0d0d0d;
-  border-radius: 55px;
-  margin: 13px 0;
-}
-
-@media (min-width: 576px) {
-  .show-border {
-    border-top: none;
-    border-bottom: none;
-  }
-}
 h1, .h1 {
   color: #0d0d0d;
   font-weight: bolder;
@@ -11937,6 +11924,30 @@ h1, .h1 {
   margin: 20px 0;
 }
 
+.show-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills .icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 30px;
+  margin: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px #404040;
+}
+#skills .icon:hover {
+  transition: all 0.5s linear;
+  box-shadow: 0px 0px 50px #0d0d0d;
+}
+
 .icon img {
   width: 45px;
   height: 45px;
@@ -11946,19 +11957,6 @@ h1, .h1 {
 
 #skills img.re-icon {
   width: 65px;
-}
-
-.icon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.progress {
-  margin: 20px;
-  box-shadow: 0 0 20px #f2f2f2;
 }
 
 .card {
@@ -12041,12 +12039,8 @@ h1, .h1 {
   cursor: pointer;
 }
 
-.d-always {
-  display: block !important;
-}
-
-.mark-up-progress {
-  transform: scale(1.08) translateY(-10%);
+.mark-up-icon {
+  transform: scale(1.3) translateY(-10%);
   transition: all 0.5s linear;
 }
 
@@ -12063,9 +12057,6 @@ h1, .h1 {
   #skills h4, #skills .h4 {
     margin: 10px 0;
     font-size: 1.1rem;
-  }
-  .mark-up-progress {
-    transform: none;
   }
 }
 
