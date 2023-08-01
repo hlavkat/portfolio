@@ -8,3 +8,6 @@ function removeMarkUpProgress(dataType) {
     .querySelectorAll(`*[data-type='${dataType}']`)
     .forEach((e) => e.classList.remove("mark-up-icon"));
 }
+function toggleIcon(id) {
+  document.querySelector(id).classList.toggle("d-none");
+}

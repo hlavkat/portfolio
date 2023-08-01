@@ -11868,7 +11868,6 @@ body {
   background-color: #8c8c8c;
 }
 
-#skills,
 #about,
 #projects,
 #hobbies {
@@ -11876,6 +11875,7 @@ body {
   min-height: 100dvh;
 }
 
+#skills,
 #contact {
   padding-top: 92px;
 }
@@ -11922,6 +11922,27 @@ h1, .h1 {
 
 #skills h4, #skills .h4 {
   margin: 20px 0;
+}
+
+.show-button {
+  width: 50%;
+  padding: 15px 30px;
+  margin: 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  box-shadow: 0 0 30px #f2f2f2;
+}
+.show-button:hover {
+  transform: scale(0.95);
+  transition: all 0.3s linear;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 30px #0d0d0d;
+  color: #0d0d0d;
+}
+.show-button h5, .show-button .h5 {
+  margin-bottom: 0;
 }
 
 .show-border {

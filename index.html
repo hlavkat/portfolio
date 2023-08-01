@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Document</title>
+    <title>Tomas Hlavka porfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -73,7 +73,7 @@
               class="col-md-6 d-flex flex-column justify-content-center align-content-center flex-wrap"
             >
               <p>
-                Vítám vás na svém porfoliu. Aktuálně absolvuji na Vysoké škole
+                Vítám vás na svém portfóliu. Aktuálně absolvuji na Vysoké škole
                 báňské - Technická univerzita Ostrava rekvalifikační kurz
                 zaměřený na objektově orientované programování a programování
                 webových aplikací. K programování jsem se dostal úplnou náhodou
@@ -113,11 +113,17 @@
         <!-- WWW -->
         <div class="container-fluid">
           <div class="show-border">
-            <h4 class="text-center">-WWW-</h4>
+            <button
+              type="button"
+              class="show-button"
+              onclick="toggleIcon('#html')"
+            >
+              <h5>-WWW-</h5>
+            </button>
             <div class="row">
               <div class="col-auto justify-content-center">
                 <!-- icons -->
-                <div class="icon">
+                <div class="icon d-none d-md-block" id="html">
                   <img
                     src="image/icons/html5.svg"
                     alt="html5"
@@ -190,9 +196,15 @@
             <!-- PROGRAMING LANGUAGES  -->
             <div class="col-md-12 col-lg-6">
               <div class="show-border">
-                <h4 class="text-center">-PROGRAMOVACÍ JAZYKY-</h4>
+                <button
+                  type="button"
+                  class="show-button"
+                  onclick="toggleIcon('#programing')"
+                >
+                  <h5>-PROGRAMOVACÍ JAZYKY-</h5>
+                </button>
                 <!-- icon -->
-                <div class="icon">
+                <div class="icon d-none d-md-block" id="programing">
                   <img
                     src="image/icons/c_sharp.svg"
                     alt="c#"
@@ -231,9 +243,15 @@
             <!-- MOBIlE APLICATION -->
             <div class="col-md-12 col-lg-6">
               <div class="show-border">
-                <h4 class="text-center">-MOBILNÍ APLIKACE-</h4>
+                <button
+                  type="button"
+                  class="show-button"
+                  onclick="toggleIcon('#mobile')"
+                >
+                  <h5>-MOBILNÍ APLIKACE-</h5>
+                </button>
                 <!-- icon -->
-                <div class="icon">
+                <div class="icon d-none d-md-block" id="mobile">
                   <img
                     src="image/icons/xamarin.svg"
                     alt="xamarin"
@@ -265,9 +283,15 @@
             <!-- OS -->
             <div class="col-md-12 col-lg-6">
               <div class="show-border">
-                <h4 class="text-center">-DevOps-</h4>
+                <button
+                  type="button"
+                  class="show-button"
+                  onclick="toggleIcon('#devops')"
+                >
+                  <h5>-DevOps-</h5>
+                </button>
                 <!-- icon -->
-                <div class="icon">
+                <div class="icon d-none d-md-block" id="devops">
                   <img
                     src="image/icons/winSrv.svg"
                     data-toggle="tooltip"
@@ -312,9 +336,15 @@
             <!-- DATABASES -->
             <div class="col-md-12 col-lg-6">
               <div class="show-border">
-                <h4 class="text-center">-DATABÁZE-</h4>
+                <button
+                  type="button"
+                  class="show-button"
+                  onclick="toggleIcon('#databases')"
+                >
+                  <h5>-DATABÁZE-</h5>
+                </button>
                 <!-- icon -->
-                <div class="icon">
+                <div class="icon d-none d-md-block" id="databases">
                   <img
                     src="image/icons/access.svg"
                     alt="access"
