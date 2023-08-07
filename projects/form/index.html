@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS project</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Vypůjči si kolo</h2>
+
+      <form action="" id="form">
+        <div class="border">
+          <h4>Typ kola</h4>
+          <div>
+            <h3 class="upozorneni"></h3>
+            <label>
+              <input type="checkbox" name="druhKola" value="horske" />Horské
+              (500 Kč/den)<input
+                type="number"
+                name="horskePoc"
+                value="0"
+                min="0"
+              />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="druhKola" value="detske" />Dětské
+              (200 Kč/den)
+              <input type="number" name="detskePoc" value="0" min="0" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="druhKola" value="silnicni" />Silniční
+              (1500 Kč/den)
+              <input type="number" name="silnicniPoc" value="0" min="0" />
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="druhKola" value="gravel" />Gravel
+              (2500 Kč/den)
+              <input type="number" name="gravelPoc" value="0" min="0" />
+            </label>
+          </div>
+        </div>
+        <div class="border">
+          <h4>Počet dnů půjčení</h4>
+          <select name="pocetDnuPujceni">
+            <option value="5">5 dnů</option>
+            <option value="7">7 dnů</option>
+            <option value="14">14 dní</option>
+            <option value="30">30 dnů</option>
+          </select>
+        </div>
+        <div class="border">
+          <h4>Cyklonosič</h4>
+          <label
+            ><input type="radio" name="cyklonosic" value="5" />Střešní (+5% z
+            celkové ceny)</label
+          >
+          <label
+            ><input type="radio" name="cyklonosic" value="10" />Na tažné (+10% z
+            celkové ceny)</label
+          >
+          <label
+            ><input type="radio" name="cyklonosic" value="0" checked />Není
+            třeba cyklonosič</label
+          >
+        </div>
+        <div class="border">
+          <h4>Celková cena zápůjčení</h4>
+          <input type="text" name="celkovaCena" readonly />
+          <button type="button" onclick="spocitejCenu()">Spočítat cenu</button>
+        </div>
+
+        <div class="border">
+          <h4>Zadejte svůj rozpočet</h4>
+          <input type="number" name="rozpocet" min="0" />
+          <input type="text" name="vysledek" readonly />
+        </div>
+        <div class="kontaktniForm border">
+          <h4>Kontaktní formulář</h4>
+          <input type="text" name="jmeno" placeholder="Jméno" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="Email"
+            required
+          />
+          <textarea
+            cols="10"
+            rows="5"
+            name="text"
+            placeholder="Zpráva"
+          ></textarea>
+          <button type="submit" name="submit" id="submit" disabled>
+            Odeslat
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

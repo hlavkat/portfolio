@@ -86,7 +86,8 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-#skills .icon {
+
+.icon {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -116,10 +117,12 @@ h1 {
   background-color: $primary;
   box-shadow: 0 0 30px $info;
   .card-button {
+    width: 100%;
     background-color: $info;
     color: $primary;
     height: 40px;
     box-shadow: 0 0 20px $info;
+    margin-top: 24px;
     &:hover {
       transform: scale(0.95);
       transition: all 0.3s linear;
@@ -127,6 +130,12 @@ h1 {
       box-shadow: 0 0 30px $primary;
       color: $info;
     }
+  }
+  .card-icon {
+    width: 30px;
+    height: 30px;
+    background-color: $primary;
+    margin-bottom: 16px;
   }
   p {
     color: $info;
@@ -203,5 +212,20 @@ h1 {
   #skills h4 {
     margin: 10px 0;
     font-size: 1.1rem;
+  }
+}
+.toggle {
+  display: none;
+}
+.icon:not(.toggle) {
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .toggle {
+    display: block;
+  }
+  .icon:not(.toggle) {
+    display: none;
   }
 }

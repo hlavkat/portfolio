@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projects/work_form/static/css/main.df08376e.css",
+    "main.js": "/projects/work_form/static/js/main.afd98c0b.js",
+    "index.html": "/projects/work_form/index.html",
+    "main.df08376e.css.map": "/projects/work_form/static/css/main.df08376e.css.map",
+    "main.afd98c0b.js.map": "/projects/work_form/static/js/main.afd98c0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df08376e.css",
+    "static/js/main.afd98c0b.js"
+  ]
+}

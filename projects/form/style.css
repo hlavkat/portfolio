@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.kontaktniForm {
+  display: flex;
+  flex-direction: column;
+}
+.border {
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.border > select {
+  justify-content: center;
+}
+.border > * {
+  padding: 10px;
+}
+h2,
+h3,
+h4 {
+  text-align: center;
+}

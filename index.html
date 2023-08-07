@@ -73,13 +73,13 @@
               class="col-md-6 d-flex flex-column justify-content-center align-content-center flex-wrap"
             >
               <p>
-                Vítám vás na svém portfóliu. Aktuálně absolvuji na Vysoké škole
+                Vítám vás na svém portfoliu. Aktuálně absolvuji na Vysoké škole
                 báňské - Technická univerzita Ostrava rekvalifikační kurz
                 zaměřený na objektově orientované programování a programování
                 webových aplikací. K programování jsem se dostal úplnou náhodou
-                a hned mě nadchla ta volnost a kerativita. Po kurzu bych se rád
-                vzdělával dál pod vedením zkušených programátorů a zároveň
-                posouval své zkušenosti a znalosti.
+                a hned mě nadchla ta volnost a kreativita. Po ukončení kurzu
+                bych se rád vzdělával dál pod vedením zkušených programátorů a
+                zároveň posouval své zkušenosti a znalosti.
               </p>
               <p>
                 <cite>
@@ -123,7 +123,7 @@
             <div class="row">
               <div class="col-auto justify-content-center">
                 <!-- icons -->
-                <div class="icon d-none d-md-block" id="html">
+                <div class="icon" id="html">
                   <img
                     src="image/icons/html5.svg"
                     alt="html5"
@@ -204,7 +204,7 @@
                   <h5>-PROGRAMOVACÍ JAZYKY-</h5>
                 </button>
                 <!-- icon -->
-                <div class="icon d-none d-md-block" id="programing">
+                <div class="icon" id="programing">
                   <img
                     src="image/icons/c_sharp.svg"
                     alt="c#"
@@ -251,7 +251,7 @@
                   <h5>-MOBILNÍ APLIKACE-</h5>
                 </button>
                 <!-- icon -->
-                <div class="icon d-none d-md-block" id="mobile">
+                <div class="icon" id="mobile">
                   <img
                     src="image/icons/xamarin.svg"
                     alt="xamarin"
@@ -291,7 +291,7 @@
                   <h5>-DevOps-</h5>
                 </button>
                 <!-- icon -->
-                <div class="icon d-none d-md-block" id="devops">
+                <div class="icon" id="devops">
                   <img
                     src="image/icons/winSrv.svg"
                     data-toggle="tooltip"
@@ -344,7 +344,7 @@
                   <h5>-DATABÁZE-</h5>
                 </button>
                 <!-- icon -->
-                <div class="icon d-none d-md-block" id="databases">
+                <div class="icon" id="databases">
                   <img
                     src="image/icons/access.svg"
                     alt="access"
@@ -409,10 +409,16 @@
               >
                 <img
                   src="./image/R.jpg"
-                  alt="construction"
-                  class="card-image-top rounded"
+                  alt="bootstrap project"
+                  class="card-image-top rounded h-50"
+                  onclick="window.open('projects/dog_exhibition/index.html')"
                 />
-                <div class="card-body d-flex flex-column">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="image/icons/bootstrap.svg"
+                    alt="bootstrap"
+                    class="card-icon"
+                  />
                   <h5 class="card-title text-center">Card title</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -420,7 +426,156 @@
                     magnam ipsum doloremque veniam consequatur, soluta iste
                     impedit quasi dolores a eaque voluptates porro ab.
                   </p>
-                  <button class="card-button btn" type="button">GitHub</button>
+                  <button
+                    class="card-button btn"
+                    type="button"
+                    onclick="window.open('https://github.com/hlavkat/dog_exhibition')"
+                  >
+                    GitHub
+                  </button>
+                  <button
+                    class="card-button btn"
+                    type="button"
+                    onclick="window.open('projects/dog_exhibition/index.html')"
+                  >
+                    Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-5">
+              <div
+                class="card h-100"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Formulář jehož funkčnost zajištuje JavaScript"
+              >
+                <img
+                  src="./image/projects_img/form.png"
+                  alt="JavaScript project"
+                  class="card-image-top rounded h-50"
+                  onclick="window.open('projects/form/index.html')"
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="image/icons/js.svg"
+                    alt="JavaScript"
+                    class="card-icon"
+                  />
+                  <h5 class="card-title text-center">Formulář</h5>
+                  <h5 class="card-title text-center">Samostatné cvičení</h5>
+                  <p class="card-text">Časový limit: 4h30min</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt placeat distinctio, deleniti, odio nihil iusto
+                    magnam ipsum doloremque veniam consequatur, soluta iste
+                    impedit quasi dolores a eaque voluptates porro ab.
+                  </p>
+                  <button
+                    class="card-button btn"
+                    type="button"
+                    onclick="window.open('https://github.com/hlavkat/Form')"
+                  >
+                    GitHub
+                  </button>
+                  <button
+                    class="card-button btn"
+                    type="button"
+                    onclick="window.open('projects/form/index.html')"
+                  >
+                    Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-5">
+              <div
+                class="card h-100"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Aplikace psí útulek,vztvořena pomocí Reactu"
+              >
+                <img
+                  src="./image/projects_img/dog_shelter.png"
+                  alt="dog shelter"
+                  class="card-image-top rounded h-50"
+                  onclick="window.open('projects/dog_shelter/index.html')"
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    class="card-icon"
+                    src="image/icons/react.svg"
+                    alt="react"
+                  />
+                  <h5 class="card-title text-center">Dog shelter</h5>
+                  <h5 class="card-title text-center">Kurzové cvičení</h5>
+                  <p class="card-text">Časový limit: --</p>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt placeat distinctio, deleniti, odio nihil iusto
+                    magnam ipsum doloremque veniam consequatur, soluta iste
+                    impedit quasi dolores a eaque voluptates porro ab.
+                  </p>
+                  <button
+                    onclick="window.open('https://github.com/hlavkat/dog_shelter')"
+                    class="card-button btn"
+                    type="button"
+                  >
+                    GitHub
+                  </button>
+                  <button
+                    onclick="window.open('projects/dog_shelter/index.html')"
+                    class="card-button btn"
+                    type="button"
+                  >
+                    Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-5">
+              <div
+                class="card h-100"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Aplikace na vytvoření pracovních příležitostí"
+              >
+                <img
+                  src="./image/projects_img/work_form.png"
+                  alt="dog shelter"
+                  class="card-image-top rounded h-50"
+                  onclick="window.open('projects/work_form/index.html')"
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    class="card-icon"
+                    src="image/icons/react.svg"
+                    alt="react"
+                  />
+                  <h5 class="card-title text-center">Work form</h5>
+                  <h5 class="card-title text-center">Samostatné cvičení</h5>
+                  <p class="card-text">Časový limit: 8h</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt placeat distinctio, deleniti, odio nihil iusto
+                    magnam ipsum doloremque veniam consequatur, soluta iste
+                    impedit quasi dolores a eaque voluptates porro ab.
+                  </p>
+                  <button
+                    onclick="window.open('https://github.com/hlavkat/react-app')"
+                    class="card-button btn"
+                    type="button"
+                  >
+                    GitHub
+                  </button>
+                  <button
+                    onclick="window.open('projects/work_form/index.html')"
+                    class="card-button btn"
+                    type="button"
+                  >
+                    Demo
+                  </button>
                 </div>
               </div>
             </div>
@@ -433,10 +588,11 @@
               >
                 <img
                   src="./image/R.jpg"
-                  alt="construction"
-                  class="card-image-top rounded"
+                  alt="php project"
+                  class="card-image-top rounded h-50"
                 />
-                <div class="card-body d-flex flex-column">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img class="card-icon" src="image/icons/php.svg" alt="php" />
                   <h5 class="card-title text-center">Card title</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -445,54 +601,7 @@
                     impedit quasi dolores a eaque voluptates porro ab.
                   </p>
                   <button class="card-button btn" type="button">GitHub</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-5">
-              <div
-                class="card h-100"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Lorem ipsum dolor sit amet consectetur."
-              >
-                <img
-                  src="./image/R.jpg"
-                  alt="construction"
-                  class="card-image-top rounded"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title text-center">Card title</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt placeat distinctio, deleniti, odio nihil iusto
-                    magnam ipsum doloremque veniam consequatur, soluta iste
-                    impedit quasi dolores a eaque voluptates porro ab.
-                  </p>
-                  <button class="card-button btn" type="button">GitHub</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-5">
-              <div
-                class="card h-100"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Lorem ipsum dolor sit amet consectetur."
-              >
-                <img
-                  src="./image/R.jpg"
-                  alt="construction"
-                  class="card-image-top rounded"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title text-center">Card title</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Incidunt placeat distinctio, deleniti, odio nihil iusto
-                    magnam ipsum doloremque veniam consequatur, soluta iste
-                    impedit quasi dolores a eaque voluptates porro ab.
-                  </p>
-                  <button class="card-button btn" type="button">GitHub</button>
+                  <button class="card-button btn" type="button">Demo</button>
                 </div>
               </div>
             </div>
